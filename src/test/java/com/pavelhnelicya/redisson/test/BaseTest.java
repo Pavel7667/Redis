@@ -26,4 +26,15 @@ public abstract class BaseTest {
     public void shutdown() {
         this.client.shutdown();
     }
+
+    /**
+     * Add Time delay method for Testing
+     */
+    protected void sleep(long millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
