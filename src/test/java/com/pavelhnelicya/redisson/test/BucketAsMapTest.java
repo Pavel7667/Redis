@@ -18,7 +18,5 @@ public class BucketAsMapTest extends BaseTest {
 
         StepVerifier.create(mono)
                 .verifyComplete();
-
-
     }
 }
